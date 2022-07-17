@@ -1,0 +1,28 @@
+{
+  "name": "goit-js-hw-10-food-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "https://natashadashkovska.github.io/goit-js-hw-10-food-service",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-service/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatashaDashkovska/goit-js-hw-10-food-service.git"
+  },
+  "author": "Natasha Dashkovska <na.dashkovska@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatashaDashkovska/goit-js-hw-10-food-service/issues"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "postcss": "^8.4.14"
+  }
+}
