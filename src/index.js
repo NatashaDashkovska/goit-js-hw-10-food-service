@@ -1,1 +1,1 @@
-console.log("hello world");
+import "./js/change-theme";
