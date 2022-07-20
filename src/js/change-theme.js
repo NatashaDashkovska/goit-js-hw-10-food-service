@@ -1,19 +1,19 @@
-const switchRef = document.querySelector("#theme-switch-toggle");
-const bodyRef = document.querySelector("body");
+const switchRef = document.querySelector('#theme-switch-toggle');
+const bodyRef = document.querySelector('body');
 
-switchRef.addEventListener("change", changeTheme);
+switchRef.addEventListener('change', changeTheme);
 
 const Theme = {
-  LIGHT: "light-theme",
-  DARK: "dark-theme",
+  LIGHT: 'light-theme',
+  DARK: 'dark-theme',
 };
 
-let currentTheme = localStorage.getItem("Theme") || Theme.LIGHT;
+let currentTheme = localStorage.getItem('Theme') || Theme.LIGHT;
 
-if (!localStorage.getItem("Theme")) {
-  console.log("no theme in local storage");
+if (!localStorage.getItem('Theme')) {
+  console.log('no theme in local storage');
 } else {
-  switchRef.checked = currentTheme === "dark-theme" ? true : false;
+  switchRef.checked = currentTheme === 'dark-theme' ? true : false;
   changeTheme();
 }
 
@@ -27,5 +27,5 @@ function changeTheme(event) {
     bodyRef.classList.remove(Theme.DARK);
     currentTheme = Theme.LIGHT;
   }
-  localStorage.setItem("Theme", currentTheme);
+  localStorage.setItem('Theme', currentTheme);
 }
